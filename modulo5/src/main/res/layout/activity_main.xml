@@ -1,0 +1,425 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration form"
+            android:id="@+id/register1"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill the blanks:"
+            android:id="@+id/fill1"
+            android:layout_below="@+id/register1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:id="@+id/name1"
+            android:layout_below="@+id/fill1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last name:"
+            android:id="@+id/lastname1"
+            android:layout_below="@+id/name1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:id="@+id/id1"
+            android:layout_below="@+id/lastname1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre:"
+            android:id="@+id/genre1"
+            android:layout_below="@+id/id1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/name11"
+            android:layout_below="@+id/fill1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/lastname11"
+            android:layout_below="@+id/name11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/id11"
+            android:layout_below="@+id/lastname11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/group"
+            android:layout_below="@id/id11"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/genre1">
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"
+                android:layout_alignTop="@+id/genre1"
+                android:layout_alignLeft="@+id/id11"
+                android:layout_alignStart="@+id/id11"
+                android:layout_marginLeft="70dp"/>
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/register1"
+                android:layout_toEndOf="@+id/register1"
+                />
+            </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-Day:"
+            android:id="@+id/bday1"
+            android:layout_below="@+id/genre1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciudad:"
+            android:id="@+id/city1"
+            android:layout_below="@+id/dp1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies:"
+            android:id="@+id/hobbie1"
+            android:layout_below="@+id/city1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <DatePicker
+            android:layout_width="300sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_below="@+id/group"
+            android:layout_toRightOf="@+id/bday1"
+            android:endYear="2014"
+            android:id="@+id/dp1"
+            android:layout_marginLeft="50dp">
+
+        </DatePicker>
+
+        <Spinner
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/dp1"
+            android:layout_toRightOf="@+id/city1"
+            android:id="@+id/spn1"
+            android:entries="@array/cities"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            >
+
+        </Spinner>
+
+        <CheckBox
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:text="Listen to music"
+            android:id="@+id/music1"
+            android:layout_alignTop="@+id/hobbie1"
+            android:layout_alignLeft="@+id/spn1"
+            android:layout_alignStart="@+id/spn1" />
+
+        <CheckBox
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:text="Watch TV"
+            android:id="@+id/tv1"
+            android:layout_below="@+id/music1"
+            android:layout_alignLeft="@+id/music1"
+            android:layout_alignStart="@+id/music1"/>
+        <CheckBox
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:text="Read"
+            android:id="@+id/read1"
+            android:layout_below="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"/>
+        <CheckBox
+            android:layout_width="200sp"
+            android:layout_height="25sp"
+            android:text="Play videogames"
+            android:id="@+id/vg1"
+            android:layout_below="@+id/read1"
+            android:layout_alignLeft="@+id/read1"
+            android:layout_alignStart="@+id/read1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/vg1"
+            android:onClick="onClick"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/name2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/lastname2"
+            android:layout_below="@+id/name2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/id2"
+            android:layout_below="@+id/lastname2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/genre2"
+            android:layout_below="@+id/id2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/bday2"
+            android:layout_below="@+id/genre2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/city2"
+            android:layout_below="@+id/bday2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/music2"
+            android:layout_below="@+id/city2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/tv2"
+            android:layout_below="@+id/music2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/read2"
+            android:layout_below="@+id/tv2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/vg2"
+            android:layout_below="@+id/read2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Name is:"
+            android:ems="10"
+            android:id="@+id/name3"
+            android:layout_above="@+id/lastname2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Last name is:"
+            android:ems="10"
+            android:id="@+id/lastname3"
+            android:layout_below="@+id/name3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/name3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="ID is:"
+            android:ems="10"
+            android:id="@+id/id3"
+            android:layout_below="@+id/lastname3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/lastname3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="Genre is:"
+            android:id="@+id/genre3"
+            android:layout_below="@+id/id3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/id3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="Born:"
+            android:id="@+id/bday3"
+            android:layout_below="@+id/genre3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/genre3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="From: "
+            android:id="@+id/city3"
+            android:layout_below="@+id/bday3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/bday3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/hobbie3"
+            android:text="Likes doing:"
+            android:layout_below="@+id/city3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="@+id/city3" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="cities">
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Bucaramanga</item>
+        <item>Buenaventura</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Puerto Berrio</item>
+        <item>Cucuta</item>
+        <item>Barranquilla</item>
+
+    </string-array>
+
+
+</resources>

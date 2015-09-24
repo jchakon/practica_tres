@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo1/modulo1.iml" filepath="$PROJECT_DIR$/modulo1/modulo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo2/modulo2.iml" filepath="$PROJECT_DIR$/modulo2/modulo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo3/modulo3.iml" filepath="$PROJECT_DIR$/modulo3/modulo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo4/modulo4.iml" filepath="$PROJECT_DIR$/modulo4/modulo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo5/modulo5.iml" filepath="$PROJECT_DIR$/modulo5/modulo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_tres.iml" filepath="$PROJECT_DIR$/practica_tres.iml" />
+    </modules>
+  </component>
+</project>
